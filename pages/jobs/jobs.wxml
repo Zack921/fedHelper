@@ -1,0 +1,12 @@
+<!--jobs.wxml-->
+<view class="job-container">
+  <view class="top">
+    第二期：2021助力前端招聘
+  </view>
+  <view>
+    <view class="tip">有招聘需求请联系微信: caifuziyou921</view>
+    <block wx:for="{{jobs}}" wx:key="timeStamp" wx:for-item="job">
+      <view class="job">{{job.topic}}</view>
+    </block>
+  </view>
+</view>
